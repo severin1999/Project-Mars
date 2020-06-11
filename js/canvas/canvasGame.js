@@ -6,12 +6,12 @@ const game = () => {
     canvas.width  = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    let craft = new Image();
-    let backG = new Image();
-    let columnT = new Image();
-    let columnB = new Image();
-    let cometa = new Image();
-    let scoreAudio = new Audio();
+    let craft = new Image(),
+    backG = new Image(),
+    columnT = new Image(),
+    columnB = new Image(),
+    cometa = new Image(),
+    scoreAudio = new Audio();
 
     craft.src = './js/canvas/spacecraft.png';
     backG.src = './js/canvas/bg.jpg';
@@ -27,9 +27,7 @@ const game = () => {
     let gravity = 1; 
     let score = 0;
 
-    function moveUp() {
-        craftYp -= 30;
-    };
+    const moveUp = () => craftYp -= 30;
     document.addEventListener('keydown', moveUp);
 
     //pipe cordinates
@@ -66,11 +64,8 @@ const game = () => {
             && (craftYp <= pipe[i].y + columnT.height || craftYp + craft.height >=
             pipe[i].y + constant ) || craftYp + craft.height > canvas.height || craftYp < -15) {
                 let gameAlert = confirm('Wanna play again?');
-                if(gameAlert === true) {
-                    return game();
-                } else {
-                    return location.reload();
-                };
+                if(gameAlert) return game();
+                return location.reload();
             };
             if(pipe[i].x === 20) {
                 score++;
