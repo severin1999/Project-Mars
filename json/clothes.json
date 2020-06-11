@@ -1,0 +1,189 @@
+clothes = [
+    {
+        "name" : "I Need My Space",
+		"photo" : "./json/tshirt INMS.jpg",
+		"backend_photo" : "./json/tshirt INMS back.jpg",
+        "colours" : ["white", "red", "blue", "green", "black"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : false,
+		"price" : "35.99",
+		"type" : "T-shirts"
+    } ,
+    {
+		"name" : "NASA Text",
+		"photo" : "./json/tshirt text.jpg",
+		"backend_photo" : "./json/tshirt text back.jpg",
+        "colours" : ["white", "blue", "black"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : false,
+		"price" : "42.99",
+		"type" : "T-shirts"
+	} ,
+	{
+		"name" : "MARS",
+		"photo" : "./json/tshirt mars.jpg",
+		"backend_photo" : "./json/tshirt mars back.jpg",
+        "colours" : ["white", "black"],
+        "sizes" : ["XS", "XL"],
+		"all_sizes" : false,
+		"new_collection" : true,
+		"price" : "54.99",
+		"type" : "T-shirts"
+	} ,
+	{
+		"name" : "Internation Space Station",
+		"photo" : "./json/tshirt ISS.jpg",
+		"backend _photo" : "./json/tshirt ISS back.jpg",
+        "colours" : ["white", "black"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : false,
+		"price" : 37.99,
+		"type" : "T-shirts"
+	} ,
+	{
+		"name" : "SpaceX",
+		"photo" : "./json/tshirt spacex.jpg",
+		"backend_photo" : "./json/tshirt spacex back.jpg",
+        "colours" : ["white", "black", "gray"],
+        "sizes" : ["L", "XL"],
+		"all_sizes" : false,
+		"new_collection" : true,
+		"price" : 39.99,
+		"type" : "T-shirts"
+	} ,
+	{
+        "name" : "NASA Text",
+		"photo" : "./json/pants text.jpg",
+		"backend_photo" : "./json/pants text back.jpg",
+        "colours" : ["black", "white"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : false,
+		"price" : "25.99",
+		"type" : "Pants"
+    	} ,
+    	{
+		"name" : "International Space Station",
+		"photo" : "./json/pants iss.jpg",
+		"backend_photo" : "./json/pants iss back.jpg",
+        "colours" : ["white", "blue", "black"],
+        "sizes" : ["M", "L", "XL"],
+		"all_sizes" : false,
+		"new_collection" : true,
+		"price" : "72.99",
+		"type" : "Pants"
+	} ,
+	{
+		"name" : "NASA",
+		"photo" : "./json/pants nasa.jpg",
+		"backend_photo" : "./json/pants nasa back.jpg",
+        "colours" : ["white", "black", "gray", "blue"],
+        "sizes" : ["XS", "M", "XL"],
+		"all_sizes" : false,
+		"new_collection" : false,
+		"price" : "44.99",
+		"type" : "Pants"
+	} ,
+	{
+		"name" : "SpaceX",
+		"photo" : "./json/pants spacex.jpg",
+		"backend_photo" : "./json/pants spacex back.jpg",
+        "colours" : ["white", "black"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : true,
+		"price" : 57.99,
+		"type" : "Pants"
+	} ,
+	{
+		"name" : "Galaxy Start",
+		"photo" : "./json/pants galaxy.jpg",
+		"backend_photo" : "./json/pants galaxt back.jpg",
+        "colours" : [],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : false,
+		"price" : 23.99,
+		"type" : "Pants"
+	} ,
+	{
+		"name" : "NASA",
+		"photo" : "./json/hoodie nasa.jpg",
+		"backend_photo" : "./json/hoodie nasa back.jpg",
+        "colours" : ["black", "blue"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : false,
+		"price" : 93.99,
+		"type" : "Hoodie"
+	} ,
+	{
+		"name" : "NASA America",
+		"photo" : "./json/hoodie america.jpg",
+		"backend_photo" : "./json/hoodie america back.jpg",
+        "colours" : ["black", "blue"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : true,
+		"price" : 96.99,
+		"type" : "Hoodie"
+	} ,
+	{
+		"name" : "SpaceX",
+		"photo" : "./json/hoodie spacex.jpg",
+		"backend_photo" : "./json/hoodie spacex back.jpg",
+        "colours" : ["black"],
+        "sizes" : ["XS", "L", "XL"],
+		"all_sizes" : false,
+		"new_collection" : false,
+		"price" : 66.99,
+		"type" : "Hoodie"
+	} ,
+	{
+		"name" : "MARS",
+		"photo" : "./json/hoodie mars.jpg",
+		"backend_photo" : "./json/hoodie mars back.jpg",
+        "colours" : ["black", "white", "red", "yellow"],
+        "sizes" : ["XS", "S", "M", "L", "XL"],
+		"all_sizes" : true,
+		"new_collection" : true,
+		"price" : 69.99,
+		"type" : "Hoodie"
+	} ,
+	{
+		"name" : "SpaceX",
+		"photo" : "./json/hats spacex.jpg",
+		"backend_photo" : "./json/hats space back.jpg",
+        "colours" : ["black", "blue"],
+        "sizes" : [],
+		"all_sizes" : true,
+		"new_collection" : true,
+		"price" : 26.99,
+		"type" : "Hats"
+	} ,
+	{
+		"name" : "NASA",
+		"photo" : "./json/hats nasa.jpg",
+		"backend_photo" : "./json/hats nasa back.jpg",
+        "colours" : ["black", "white", "red"],
+        "sizes" : [],
+		"all_sizes" : true,
+		"new_collection" : false,
+		"price" : 19.99,
+		"type" : "Hats"
+	} ,
+	{
+		"name" : "NASA for kids",
+		"photo" : "./json/hats nasa rot.jpg",
+		"backend_photo" : "./json/hats nasa rot back.jpg",
+        "colours" : ["black", "white", "lightblue"],
+        "sizes" : [],
+		"all_sizes" : true,
+		"new_collection" : true,
+		"price" : 35.99,
+		"type" : "Hats"
+	}
+]

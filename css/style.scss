@@ -1,0 +1,390 @@
+@import 'appearance' ;
+@import 'startButton' ;
+@import 'dropdown' ;
+@import 'store' ;
+@import 'mainAnimation' ;
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('./images/body.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    overflow-x: hidden
+}
+#nav {
+    // height: 10vh;
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    .wrapper {
+        display: contents;
+        transform: translate(-50%, -50%);
+        svg {
+            width: 80px;
+            cursor: pointer;
+            fill: #ffffff;
+        }
+        svg .circle {
+            opacity: 0;
+            transition: all .25s;
+        }
+        svg.mute .circle {
+            width: 200px;
+            opacity: 1;
+        }
+    }       
+    .nav_menu {
+        width: 100vw;
+        position: absolute;
+        pointer-events: none;
+        .hamburger {
+            padding-top: 10px;
+        }
+    }
+}
+.scrollbar {
+    overflow: hidden;
+}
+.emblem {
+    margin-bottom: 35px;
+    height: 125px;
+    display: flex;
+    justify-content: center; 
+    #mars  {
+        height: 145px;
+    }
+}
+#container {
+    display: none;
+    section {
+        width: 100%;
+        height: 100vh;
+    }
+    section:nth-child(1) {
+        background:url('./images/spacex.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        margin-block-start: -20px;
+    }
+    section:nth-child(2) {
+        background: black;
+        height: auto;
+    }
+    section:nth-child(3) {
+        background: url('./images/iss.jpg');
+        margin-block-start: -30px;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    section:nth-child(4) {
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        background: black;
+        padding: 30px 0;
+        color: #b43619;
+    }
+    section:nth-child(5) {
+        background: url('./images/elon\ musk.jpg');
+        margin-block-start: -30px;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+.subtitle {
+    font-family: 'Droid serif', serif; 
+    font-size: 36px; 
+    font-weight: 400; 
+    font-style: italic; 
+    line-height: 44px; 
+    text-align: center;
+    letter-spacing: 8px;
+    color: rgb(180, 54, 25);
+    margin: 0;
+    padding: 20px 0;
+}
+.line_subtitle {
+    border-top: 1px solid #fff; 
+    margin-bottom: 30px;
+    span {
+        color: #000;
+        font-style: italic;
+        font-size: 15px;
+        text-align: center;
+        padding: 7px 10px;
+        background: #fff;
+        width: 120px;
+        margin: 0 auto;
+        display: block;
+        font-family: "Droid serif", serif;
+        z-index: -1;
+    }
+}
+.table {
+    width: 90%;
+    height: 90vh;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    color: white;
+    .table_subtitle {
+        height: 5%;
+        background: transparent;
+    }
+    .subtitle_details {
+        background: black;
+        text-align: center;
+    }
+    .table_container {
+        background-color: #252424cb;
+        height: 85%;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 9px;
+            border-left: 2px solid #c0c0c0;
+            border-right: 2px solid #c0c0c0;
+        }
+        header {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            font-size: 35px;
+            padding: 10px;
+        }
+    }
+    .table_buttons {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background-color: rgba(196, 241, 243, 0.5);
+        }
+    }
+    .table_body {
+        display: grid;
+        grid-template-rows: 1fr 5fr 7fr;;
+        
+    }
+    .details p {
+        font-size: 30px;
+        padding: 0 50px;
+    }
+}
+#spacex_launches {
+    
+    #all_launches_body header {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+    .launch_position {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+}
+.invisible {
+    display: none;
+}
+.count_down {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+.number {
+    font-size: 50px;
+    text-align: center;
+}
+#first_section {
+    font-family: "Oswald", sans-serif;
+    color: rgb(180, 54, 25);
+}
+#first_section #first_section_container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    #picture_frame {
+        text-align: center;
+        align-self: center;
+        img {
+            width: 220px;
+            height: 280px;
+            border-radius: 5px;
+        }
+    }
+    #description {
+        padding: 0 65px 0 0;
+        h3 {
+            font-style: italic;
+            font-family: 'Droid serif', serif;
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 5px;
+            word-spacing: 5px;
+            text-align: center;
+        }
+        p {
+            font-family: auto;
+            line-height: 20px;
+        }
+    }
+}
+#map_station {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    text-align: center;
+    #n2yo_passes {
+        display: none;
+    }
+}
+#cosmonauts {
+    font-size: 22px;
+}
+#mars_weather p {
+    padding: 0 30px;
+    text-align: center;
+}
+#weather_cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    .weather_card {
+        display: grid;
+        grid-template-rows: 2fr 2fr;
+        gap: 15px;
+        background-color: #252424cb;
+        margin:5px;
+        padding: 5px 15px;
+        font-family: monospace;
+        font-size: 15px;
+        .weather_day {
+            border-bottom: 1px solid;
+            padding-bottom: 10px;
+        }
+    }
+    h3, p {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+#mars_section {
+    // height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    #mars_countdown {
+        display: block;
+    }
+}
+#mars_container {
+    display: none;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 20px;
+    #mars_info {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        padding: 20px;
+        p {
+            font-size: 25px;
+        }
+    }
+    #mars_container_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 22px;
+            padding: 15px;
+            border-bottom: 1px solid;
+        }
+    } 
+}
+#counting_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: wrap;
+    grid-row: 1;
+    padding: 20px;
+    div {
+        display: grid;
+        grid-template-rows: 4fr 1fr;
+        align-items: center;
+    }
+    .counting_number {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+#scroll_button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    // border-radius: 4px;
+}
+  
+#scroll_button:hover {
+    // background-color: #555;
+    font-size: 40px;
+}
+
+#contact {
+    display: none;
+    width: 50vw;
+    height: 90vh;
+    margin: auto;
+    form {
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(169,169,169, 0.6);
+        text-align: center;
+    }
+    .contact_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            width: 250px;
+            height: 35px;
+            text-align: center;
+            border-radius: 5px;
+        }
+    }
+}
+.submit {
+    display: flex;
+    justify-content: flex-end;
+    #form_submit {
+        width: 100px;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 5px;
+        cursor: pointer;
+        text-align: center;
+        background: brown;
+    }
+}

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mars project</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="./font awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="nav">
+        <div class="wrapper">
+            <svg class="" version="1.1"  xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+                <path d="M578.135,106.298c-11.136-6.299-24.275-6.076-35.245,0.494c-0.501,0.334-0.994,0.675-1.454,1.058L386.939,238.584H265.662
+                    c-6.299,0-11.414,5.123-11.414,11.421v216.649c0,3.063,1.225,5.957,3.334,8.087c2.186,2.103,5.018,3.327,8.08,3.327l120.99-0.056
+                    l154.399,141.871c0.612,0.501,1.226,0.96,1.837,1.336c5.632,3.396,11.859,5.065,18.04,5.065c5.902,0,11.805-1.503,17.205-4.564
+                    c11.414-6.403,18.207-18.138,18.207-31.403V137.756C596.342,124.498,589.549,112.756,578.135,106.298L578.135,106.298z
+                    M573.514,590.317c0,4.914-2.449,9.243-6.569,11.582c-1.782,1.017-6.236,2.909-11.414,0.278L402.46,461.601v-51.962
+                    c0-6.278-5.06-11.415-11.345-11.415c-6.354,0-11.422,5.137-11.422,11.415v45.545l-102.609,0.056v-193.82h102.609v45.601
+                    c0,6.285,5.068,11.415,11.422,11.415c6.285,0,11.345-5.129,11.345-11.415v-51.726l152.902-129.343
+                    c5.233-2.735,9.8-0.787,11.582,0.216c4.12,2.338,6.569,6.681,6.569,11.588V590.317L573.514,590.317z"/>
+                <path class="circle" d="M744.895,358.302c0-68.104-45.714-128.849-111.191-147.78c-6.069-1.726-12.361,1.726-14.087,7.795
+                    c-1.782,6.014,1.726,12.361,7.795,14.101c55.734,16.133,94.654,67.916,94.654,125.884c0,58.018-38.92,109.813-94.654,125.905
+                    c-6.069,1.78-9.577,8.06-7.795,14.128c1.447,5.012,5.957,8.24,10.913,8.24c1.058,0,2.115-0.167,3.174-0.432
+                    C699.182,487.214,744.895,426.397,744.895,358.302L744.895,358.302z"/>
+            </svg>
+        </div>
+        <div class="nav_menu">
+            <div class="hamburger">
+                <div class="bar" id="pile1"></div>
+                <div class="bar" id="pile2"></div>
+                <div class="bar" id="pile3"></div>
+            </div>
+            <ul class="nav_links">
+                <li id="container_button">
+                    Stay always informed
+                </li>
+                <li id="store_button">
+                    Our store
+                </li>
+                <li id="space_game">
+                   Space game
+                </li>
+                <li id="contact_button">
+                    Contact us
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="emblem">
+        <img id="mars" src="./css/images/mars.jpg" alt="">
+    </div>
+    <div class="appearance animation_appearance">
+        <img src="./css/images/mars logo.png" class="logo">
+        <h2 class="byline" id="byline">space has so much to offer</h2>
+    </div>
+    <div id="start_button">
+        <a id="a_start_button">GET STARTED</a>
+    </div>
+    <div id="container">
+        <section>
+            <div class="table" id="spacex_launches">
+                <div class="table_title">
+                    <h2 id="upcoming_title">UPCOMING : </h2>
+                </div>
+                <div class="table_container">
+                    <header>
+                        <div class="table_buttons" id="up_next">
+                            <span>
+                                Up Next
+                            </span>
+                        </div>
+                        <div class="table_buttons" id="next_launches">
+                            <span>
+                                Next Launches
+                            </span>
+                        </div>
+                    </header>
+                    <div id="upcoming_launch_body" class="table_body">
+                        <div id="rocket" class="subtitle_details"></div>
+                        <div class="count_down">
+                            <div class="number">
+                                <div id="day_number_launch"></div>
+                                <p>DAYS</p>
+                            </div>
+                            <div class="number">
+                                <div id="hour_number_launch"></div>
+                                <p>HOURS</p>
+                            </div>
+                            <div class="number">
+                                <div id="minute_number_launch"></div>
+                                <p>MINUTES</p>
+                            </div>
+                            <div class="number">
+                                <div id="seconds_number_launch"></div>
+                                <p>SECONDS</p>
+                            </div>
+                        </div>
+                        <div class="details" id="details"></div>
+                    </div>
+                    <div id="all_launches_body" class="invisible">
+                        <header>
+                            <span>Mission</span>
+                            <span>Data(UTC)</span>
+                            <span>Vehicle</span>
+                            <span>Launchpad</span>
+                        </header>
+                        <div id="all_launches"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div> -->
+            <div id="first_section">
+                <h1 class="subtitle">
+                    Astronomy Picture Of The Day
+                </h1>
+                <div class="line_subtitle" id="date"></div>
+                <div id="first_section_container">
+                    <div id="picture_frame"></div>
+                    <div id="description"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="table" id="iss_tracking">
+                <div class="table_subtitle">
+                    <h2>
+                        Imagine being on International Space Station
+                    </h2>
+                </div>
+                <div class="table_container">
+                    <div id="map_station">
+                        <script>
+                            var norad_n2yo = '25544';
+                            var size_n2yo = 'small';
+                            // var map_n2yo = '1';
+                        </script>
+                        <script type="text/javascript" src="https://www.n2yo.com/js/widget-tracker.js"></script>
+                        <div id="cosmonauts">
+                            <h3>
+                                People in Space right now :
+                            </h3>
+                        </div>
+                        <div>
+                            <iframe width="420" height="315" src="https://www.youtube.com/embed/EEIk7gwjgIM"></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="mars_weather">
+                <h1 class="subtitle">
+                    Latest Weather on MARS
+                </h1>
+                <div class="line_subtitle">
+                    <span>InSight Mission</span>
+                </div>
+                <p>
+                    InSight Mission is about taking daily weather measurements (temperature, wind, pressure) on the surface of Mars at Elysium Planitia, a flat, smooth plain near Mars’ equator.
+                </p>
+                <div id="weather_cards"></div>
+            </div>
+        </section>
+        <section>
+            <div class="table">
+                <div class="table_title">
+                    <h2>
+                        Timelines : Elon Musk's Bet
+                    </h2>
+                </div>
+                <div id="mars_section" class="table_container">
+                    <header>
+                        <div id="musk_bet" class="table_buttons">
+                            <span>
+                                Elon Musk's Bet
+                            </span>
+                        </div>
+                        <div id="why_mars" class="table_buttons">
+                            <span>
+                                Why MARS?
+                            </span>
+                        </div>
+                    </header>
+                    <div class="subtitle_details">
+                        <p>
+                            Missions: MARS
+                        </p>
+                    </div>
+                    <div id="mars_countdown" class="table_body">
+                        <div class="count_down">
+                            <div class="number">
+                                <div id="day_number_bet"></div>
+                                <p>DAYS</p>
+                            </div>
+                            <div class="number">
+                                <div id="hour_number_bet"></div>
+                                <p>HOURS</p>
+                            </div>
+                            <div class="number">
+                                <div id="minute_number_bet"></div>
+                                <p>MINUTES</p>
+                            </div>
+                            <div class="number">
+                                <div id="seconds_number_bet"></div>
+                                <p>SECONDS</p>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <p>
+                                In April 2009, Michael S. Malone revealed, while interviewing Elon Musk, that the two had a bet that SpaceX would put a man on Mars by "2020 or 2025". Musk has continued to reiterate this rough timeframe since. This countdown clock expires on 1 January 2026, at 00:00 UTC.No pressure, Elon.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="mars_container">
+                        <!-- <div class="main_animation">
+                            <div class="left">
+                                <div class="space">
+                                    <div class="planet">
+                                        <h1>
+                                            MARS<br>HAS A<br>FUTURE
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div id="mars_info">
+                            <p>
+                                At an average distance of 140 million miles, Mars is one of Earth's closest habitable neighbors. Mars is about half again as far from the Sun as Earth is, so it still has decent sunlight. It is a little cold, but we can warm it up. Its atmosphere is primarily CO2 with some nitrogen and argon and a few other trace elements, which means that we can grow plants on Mars just by compressing the atmosphere. Gravity on Mars is about 38% of that of Earth, so you would be able to lift heavy things and bound around. Furthermore, the day is remarkably close to that of Earth.
+                            </p>
+                        </div>
+                        <div id="mars_container_details">
+                            <div>
+                                <span>
+                                    Diametr
+                                </span>
+                                <span>
+                                    6,791 km
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    Day Length
+                                </span>
+                                <span>
+                                    24 hrs 37 min
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    Force of Gravity
+                                </span>
+                                <span>
+                                    38% of Earth
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    Avg Distance from Earth
+                                </span>
+                                <span>
+                                    225M km
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    Age
+                                </span>
+                                <span>
+                                    4.5 billion years
+                                </span>
+                            </div>
+                        </div>
+                        <div id="counting_details">
+                            <div>
+                                <span id="" class="counting_number">6</span>
+                                <span>MONTHS TO GET TO MARS</span>
+                            </div>
+                            <div>
+                                <span class="counting_number">2</span>
+                                <span >MOONS</span>
+                            </div>
+                            <div>
+                                <span class="counting_number">14</span>
+                                <span>ORBITING SATELLITES</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button id="scroll_button">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div id="store_container">
+        <div id="store">
+            <div id="store_title">
+                <h2>
+                    Choose the best for you. Be in style with NASA's logo.
+                </h2>
+                <div id="store_subtitle">
+                    <div id="subtitle_help">
+                        <span>
+                            Add what you preffer to your list
+                        </span>
+                        <i class="fa fa-info"></i>
+                    </div>
+                    <div class="switches" >
+                        <div class="switch_container">
+                            <label class="switch">
+                                <input class="checkbox_input" type="checkbox">    
+                                <div></div>
+                            </label>
+                            <span class="switch_text">New collection only</span>
+                        </div>
+                        <!-- <div class="switch_container">
+                            <label class="switch">
+                                <input class="checkbox_input" type="checkbox" value="new_collection">    
+                                <div></div>
+                            </label>
+                            <span class="switch_text">New collection only</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="store_buttons">
+                <div id="all_clothes">
+                    All clothes
+                </div>
+                <div id="T-shirts">
+                    T-shirts
+                </div>
+                <div id="Pants">
+                    Pants
+                </div>
+                <div id="Hoodie">
+                    Hoodie
+                </div>
+                <div id="Hats">
+                    Hats
+                </div>
+                <div id="button_price">
+                    <label>Sort by:</label>
+                    <select class="sort_price">
+                        <option selected></option>
+                        <option value="cheapest">
+                            The cheapest
+                        </option>
+                        <option value="expensive">
+                            The most expensive
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div id="products"></div>
+        </div>
+        <div id="cart">
+            <div id="products_selected"></div>
+            <div id="payment">
+                <div id="total_cost">
+                    <span> Total payment :</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <form>
+            <div class="contact_info">
+                <label>First Name</label>
+                <input id="f_name" type="text" placeholder="Your first name goes here..." required>
+            </div>
+            <div class="contact_info">
+                <label>Last Name</label>
+                <input id="l_name" type="text" placeholder="Your surname goes name..." required>
+            </div>
+            <div class="contact_info">
+                <label>Email address</label>
+                <input id="username_mail" type="email" placeholder="name@example.com" required>
+            </div>
+            <div class="contact_info">
+                <label>Password</label>
+                <input id="username_password" type="password" placeholder="Email's password" required>
+            </div>
+            <div class="contact_info">
+                <label>Subject</label>
+                <input id="mail_subject" type="text" placeholder="What is mail about?" required>
+            </div>
+            <div class="contact_info">
+                <!-- <label>Your country of living</label> -->
+                <select name="country" class="countries" id="countryId">
+                    <option value="">Select Country</option>
+                </select>
+                <select name="state" class="states" id="stateId">
+                    <option value="">Select State</option>
+                </select>
+                <select name="city" class="cities" id="cityId">
+                    <option value="">Select City</option>
+                </select>
+            </div>
+            <div class="contact_info">
+                <label>Select a destinary</label>
+                <select  id="recipient">
+                    <option default></option>
+                    <option value="nssc-contactcenter@nasa.gov">
+                        nssc-contactcenter@nasa.gov
+                    </option>
+                    <option value="media@spacex.com">
+                        media@spacex.com
+                    </option>
+                    <option value="severin1999vitalir@gmail.com">
+                        severin1999vitalir@gmail.com
+                    </option>
+                </select>
+            </div>
+            <div>
+                <textarea id="mail_body" placeholder="Write something.." rows="10" cols="50"></textarea>
+            </div>
+            <div class="submit">
+                <span id="form_submit">Send my mail</span>
+            </div>
+        </form>
+    </div>
+    <!-- <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div> -->
+        
+    
+    <script src="./js/mainPage.js"></script>
+    <script src="./js/canvas/canvasGame.js"></script>
+    <script src="./js/container.js"></script>
+    <script src="./json/clothes.json"></script>
+    <script src="./js/store.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="./js/contact.js"></script>
+</body>
+</html>

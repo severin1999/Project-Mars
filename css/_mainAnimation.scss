@@ -1,0 +1,49 @@
+.main_animation {
+    // position: fixed;
+    // top: 50%;
+    // left: 50%;
+    // margin-left: -230px;
+    // margin-top: -160px;
+    // width: 460px;
+    // height: 320px;
+    .space {
+        background: radial-gradient(ellipse at center,  
+        rgb(38, 122, 231) 0%,
+        rgb(139, 178, 230) 11%,
+        rgb(189, 202, 238) 22%,
+        rgb(255, 255, 255) 25%,
+        transparent,
+        transparent 100%);
+        padding-top:10px;
+        padding-left:10px;
+        width:300px;
+        height:200px;
+    }
+    .planet {
+        width: 220px;
+        height: 220px;
+        border-radius: 120px;
+        margin-left: 210px;
+        // margin-top:70px;
+        transform: rotate(20deg);
+        animation: rotate 90s infinite linear;
+        padding-top:4px;
+        // background: url('moon.png');
+        background: url('https://3.bp.blogspot.com/_9DvzmslTIME/TQrUKY5hQ_I/AAAAAAAAAjA/5esqGHQ-PBk/s400/planet_Muunilinst1200.png');
+        box-shadow:inset 8px 8px 10px rgba(255,255,255,0.7),
+        inset -19px -19px 70px rgba(0,0,0,0.9),
+        inset -5px -5px 8px rgba(0,0,0,0.7),
+        -5px -5px 10px 1px rgba(255,255,255,0.5),
+        5px 5px 30px 1px rgba(255,80,80,0.5);
+        h1 {
+            color:rgb(27, 26, 26);
+            transform: rotate(-20deg);
+            margin-left: -160px;
+            margin-top: 90px;
+            font-family: 'Audiowide', sans-serif;
+        }
+    }
+    @keyframes rotate {
+        to {background-position:400px 0;}
+    }
+}

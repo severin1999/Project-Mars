@@ -1,0 +1,83 @@
+#start_button {
+    display: none;
+    animation: start_button 1500ms ease-out;
+    // animation: spin_button 1500ms ease-in;
+}
+#start_button a {
+    text-decoration: none;
+    position: relative;
+    color: rgb(180, 54, 25);
+    padding: 16px 20px;
+    letter-spacing: 10px;
+    border: 1px solid rgb(180, 54, 25);
+    // transition: all 300ms ease;
+    box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
+    cursor: pointer;
+}
+#start_button a:before{
+    // position: absolute;
+    content: '';
+    width: 0%; 
+    // height: 100%;
+    // top: 0; 
+    left: 50%;
+    // z-index: -1;
+    // transition: all 0ms ease;
+}
+#start_button a:hover {
+    box-shadow:none;
+}
+#start_button a:hover:before {
+    position: absolute;
+    content: '';
+    width: 100%; height: 100%;
+    background: rgba(92, 37, 37, 0.336);
+    top: 0; 
+    left: 0%;
+    z-index: -1;
+    transition: all 300ms ease;
+}
+@keyframes start_button {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateZ(0.40em);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(0.25);
+    }
+    89% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.95) translateY(-0.40em);
+    }
+}
+// @keyframes spin_button {
+//     0% {
+//         opacity: 0;
+//         transform: rotateY(90deg);
+//     }
+//     10% {
+//         opacity: 0;
+//         transform: rotateY(90deg);
+//     }
+//     30% {
+//         opacity: 1;
+//     }
+//     70% {
+//         transform: rotateY(0);
+//         opacity: 1;
+//     }
+//     86% { 
+//         transform: rotateY(0);
+//         opacity: 1;
+//     }
+//     95% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
