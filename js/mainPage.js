@@ -69,7 +69,6 @@ icon.addEventListener("click", () => {         //stop or play music, icon change
     icon.classList.toggle('mute');
 });
 
-
 const closeDropDown = () => {
     let navLinks = document.querySelector('.nav_links');
     let links = document.querySelectorAll('.nav_links li');
@@ -79,20 +78,24 @@ const closeDropDown = () => {
     links.forEach(link => link.classList.toggle('hide'));
     bars.forEach(bars => bars.classList.toggle('change'));
 };
+
 const showStore = () => {
     document.body.style.backgroundImage = `url('./css/images/store.jpg')`;
     document.getElementById('store_container').style.display = 'grid';
 };
+
 const showContainer = () => {
     document.querySelector('#container').style.display = 'block';
     document.body.style.overflowY = 'auto';
     document.body.style.background = 'content-box';
     document.getElementById('nav').style.background = 'black';
 };
+
 const showContact = () => {
     document.body.style.backgroundImage = `url('./css/images/contact.png')`;
     document.getElementById('contact').style.display = 'block';
 };
+
 let menuButtons = [...document.querySelector('.nav_links').children];
 let menuButtonsId = menuButtons.map(menuButton => menuButton.id);
 const allPages = [document.getElementById('container'), document.getElementById('store_container')];
@@ -101,9 +104,7 @@ menuButtons.forEach(menuButton => {
     menuButton.addEventListener('click', () => {
         function hideOtherPages(id) {
             for(let page of allPages) {
-                if(page.id != id) {
-                    page.style.display = 'none';
-                };
+                if(page.id !== id) page.style.display = 'none';
             };
         };
         switch(event.target.id) {

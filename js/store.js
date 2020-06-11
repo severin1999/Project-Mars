@@ -154,9 +154,7 @@ const putProductInCart = product => {
     size.innerHTML = `Size selected : ${product.size.innerHTML}`;
     let colour = document.createElement('div');
     colour.setAttribute('style', 'display: flex; justify-content: space-around')
-console.log(product.colour)
 
-    // colour.innerHTML = product.colour;
     let price = document.createElement('div');
     price.innerHTML = `Price : ${product.price}`;
     price.classList.add('cart_product_price');

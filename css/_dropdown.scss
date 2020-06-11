@@ -2,13 +2,11 @@
     transition: all .5s ease;
     transition-delay: $time_delay;
 }
-
 .nav_menu .nav_links {
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    // margin-left: auto;
     position: fixed;
     background: url('./images/background.jpg') no-repeat;
     background-size: cover;
@@ -31,7 +29,6 @@
     position: absolute;
     cursor: pointer;
     right: 5%;
-    // transform: translate(-5%, 50%);
     z-index: 2;
     .bar {
         width: 30px;

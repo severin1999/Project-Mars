@@ -33,7 +33,8 @@ const countDown = (date, id) => {
         document.getElementById(`minute_number_${id}`).innerHTML = minutes;
         document.getElementById(`seconds_number_${id}`).innerHTML = seconds;
     }, 1000));
-}
+};
+
 const spacexTable = (data) => {
     function countDownTable(upcomingLaunch) {
         let mission = document.createElement('span'),
@@ -74,6 +75,7 @@ const spacexTable = (data) => {
         document.getElementById('all_launches').appendChild(launch)
     };
 };
+
 const pictureOfTheDay = (response) => {
     let photoFrame = document.getElementById('picture_frame');
     let description = document.getElementById('description');
@@ -114,6 +116,7 @@ const pictureOfTheDay = (response) => {
 
     document.getElementById('date').appendChild(dayOfPicture);
 };
+
 const pplInIss = (response) => {
     let listOfCosmonauts = document.createElement('ol');
 
@@ -124,6 +127,7 @@ const pplInIss = (response) => {
     };
     document.getElementById('cosmonauts').appendChild(listOfCosmonauts)
 };
+
 const marsWeather = (response) => {
     const temperatures = Object.entries(response).map(([sol, data]) => {
         return {
@@ -174,10 +178,12 @@ const marsWeather = (response) => {
         document.getElementById('weather_cards').appendChild(weatherCard)
     };
 };
+
 const countDownBet = () => {
     let countDownDate = new Date('January 1, 2026 00:00');
     countDown(countDownDate, 'bet');
 };
+
 fetch('https://api.nasa.gov/insight_weather/?api_key=l2M7ezAqrDGe03IBjZ86MWJEUqfYQycafot3bVja&feedtype=json&ver=1.0')
     .then(data => data.json())
     .then(response => {
@@ -203,13 +209,10 @@ document.getElementById('up_next').addEventListener('click', () => {
 });
 document.getElementById('why_mars').addEventListener('click', () => {
     document.getElementById('mars_container').style.display = 'grid';
-    console.log('2')
     document.getElementById('mars_countdown').style.display = 'none';
 });
 document.getElementById('musk_bet').addEventListener('click', () => {
-
     document.getElementById('mars_countdown').style.display = 'block';
-    console.log('1')
     document.getElementById('mars_container').style.display = 'none';
 });
 

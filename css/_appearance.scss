@@ -58,24 +58,18 @@
     }
     10% {
         opacity: 0;
-        // transform: rotateY(90deg);
     }
     30% {
         opacity: 1;
         transform: rotateY(90deg);
     }
     70% {
-        // transform: rotateY(45deg);
         opacity: 1;
     }
     86% { 
-        // transform: rotateY(0);
         transform: rotateY(45deg);
         opacity: 1;
     }
-    // 95% {
-    //     opacity: 0;
-    // }
     100% {
         opacity: 0;
     }
@@ -89,17 +83,13 @@
         transform: translateZ(0);
     }
 }
-  
-  
-  
-  /*** Media queries for adjusting to different screen sizes ***/
-  
+
+/*adjusting to different screen sizes */
 @media only screen and (max-width: 600px) {
     .appearance {
       font-size: 10px;
     }
 }
-  
 @media only screen and (max-width: 480px) {
     .appearance {
       font-size: 7px;
