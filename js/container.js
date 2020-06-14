@@ -192,7 +192,7 @@ fetch('https://api.nasa.gov/insight_weather/?api_key=l2M7ezAqrDGe03IBjZ86MWJEUqf
             validity_checks,
             ...solData
         } = response;
-        marsWeather(solData)
+        marsWeather(solData);
     });
 makeRequest(potdNASA, pictureOfTheDay);
 makeRequest(spacexLaunches, spacexTable);
@@ -214,6 +214,16 @@ document.getElementById('why_mars').addEventListener('click', () => {
 document.getElementById('musk_bet').addEventListener('click', () => {
     document.getElementById('mars_countdown').style.display = 'block';
     document.getElementById('mars_container').style.display = 'none';
+});
+document.getElementById('live_streaming').addEventListener('click', () => {
+    document.getElementById('map_station').style.display = 'none';
+    document.getElementById('iss_stream').style.display = 'flex';
+    document.getElementById('iss_container').style.gridTemplateRows = '1fr 8fr';
+});
+document.getElementById('live_tracking').addEventListener('click', () => {
+    document.getElementById('map_station').style.display = 'grid';
+    document.getElementById('iss_stream').style.display = 'none';
+    // document.getElementById('iss_container').style.gridTemplateRows = 'initial';
 });
 
 //  user clicks on the button, scroll to the top of the document
