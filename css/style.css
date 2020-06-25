@@ -575,7 +575,7 @@ div.change:nth-child(3) {
 .card_product .info_product {
   display: -ms-grid;
   display: grid;
-  background: lightslategray;
+  background: rgba(119, 136, 153, 0.3);
 }
 
 .card_product .product_name {
@@ -631,7 +631,7 @@ div.change:nth-child(3) {
 }
 
 .card_product .price_add {
-  background: lightslategray;
+  background: rgba(119, 136, 153, 0.3);
 }
 
 .card_product .price_add .product_price {
@@ -674,11 +674,12 @@ div.change:nth-child(3) {
       -ms-flex-align: center;
           align-items: center;
   z-index: -1;
+  border-radius: 5px;
 }
 
 #cart #products_selected {
   height: 670px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .cart_product {
@@ -686,7 +687,7 @@ div.change:nth-child(3) {
   display: grid;
   -ms-grid-columns: 2fr 4fr;
       grid-template-columns: 2fr 4fr;
-  background: lightslategrey;
+  background: rgba(119, 136, 153, 0.3);
   margin: 15px;
   border-radius: 12px;
 }

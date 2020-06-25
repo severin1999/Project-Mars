@@ -35,7 +35,7 @@ const countDown = (date, id) => {
     }, 1000));
 };
 
-const spacexTable = (data) => {
+const spacexTable = data => {
     function countDownTable(upcomingLaunch) {
         let mission = document.createElement('span'),
         rocket = document.createElement('p'),
@@ -76,7 +76,7 @@ const spacexTable = (data) => {
     };
 };
 
-const pictureOfTheDay = (response) => {
+const pictureOfTheDay = response => {
     let photoFrame = document.getElementById('picture_frame');
     let description = document.getElementById('description');
 
@@ -117,7 +117,7 @@ const pictureOfTheDay = (response) => {
     document.getElementById('date').appendChild(dayOfPicture);
 };
 
-const pplInIss = (response) => {
+const pplInIss = response => {
     let listOfCosmonauts = document.createElement('ol');
 
     for(let cosmonaut of response.people) {
@@ -128,7 +128,7 @@ const pplInIss = (response) => {
     document.getElementById('cosmonauts').appendChild(listOfCosmonauts)
 };
 
-const marsWeather = (response) => {
+const marsWeather = response => {
     const temperatures = Object.entries(response).map(([sol, data]) => {
         return {
             solDay: sol,
@@ -139,7 +139,7 @@ const marsWeather = (response) => {
             windDirectionCardinal: data.WD.most_common.compass_point,
             date: new Date(data.First_UTC)
         }
-    })
+    });
     function displayDate(date) {
         return date.toLocaleDateString(
             undefined,
