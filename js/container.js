@@ -223,7 +223,6 @@ document.getElementById('live_streaming').addEventListener('click', () => {
 document.getElementById('live_tracking').addEventListener('click', () => {
     document.getElementById('map_station').style.display = 'grid';
     document.getElementById('iss_stream').style.display = 'none';
-    // document.getElementById('iss_container').style.gridTemplateRows = 'initial';
 });
 
 //  user clicks on the button, scroll to the top of the document
